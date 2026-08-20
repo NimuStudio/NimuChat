@@ -114,6 +114,10 @@ NimuChat/
 - 扩展：水平扩展时用 Redis Pub/Sub 做跨节点广播
 - 限流：消息频率限制、内容长度校验（已做 2000 字符截断）
 
+## 配套组件
+
+- 🎨 需要漂亮的聊天界面？搭配 [**Nimu Glass UI**](https://github.com/NimuStudio/Nimu-glass-ui)（三主题玻璃拟态 UI 体系，含聊天界面组件）——NimuChat 管通讯，Nimu Glass UI 管颜值。
+
 ## 许可证
 
 [MIT](LICENSE)

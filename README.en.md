@@ -114,6 +114,10 @@ NimuChat/
 - Scaling: use Redis Pub/Sub for cross-node broadcast
 - Rate limiting: message frequency limits (content is already truncated to 2000 chars)
 
+## Related
+
+- 🎨 Need a beautiful chat UI? Pair with [**Nimu Glass UI**](https://github.com/NimuStudio/Nimu-glass-ui) (3-theme glassmorphism UI system incl. chat components) — NimuChat handles messaging, Nimu Glass UI handles looks.
+
 ## License
 
 [MIT](LICENSE)
