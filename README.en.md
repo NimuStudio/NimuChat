@@ -1,4 +1,4 @@
-<div align="center">
+﻿<div align="center">
 
 # ⚡ NimuChat
 
@@ -118,6 +118,10 @@ NimuChat/
 - Storage: replace the in-memory Map with Redis / SQLite / DB for persistence & multi-instance
 - Scaling: use Redis Pub/Sub for cross-node broadcast
 - Rate limiting: message frequency limits (content is already truncated to 2000 chars)
+
+## Discussions
+
+💬 Questions or want to chat? Join [GitHub Discussions](https://github.com/NimuStudio/NimuChat/discussions).
 
 ## Related
 

@@ -1,4 +1,4 @@
-<div align="center">
+﻿<div align="center">
 
 # ⚡ NimuChat
 
@@ -118,6 +118,10 @@ NimuChat/
 - 存储：内存 Map 换成 Redis / SQLite / 数据库，支持持久化与多实例
 - 扩展：水平扩展时用 Redis Pub/Sub 做跨节点广播
 - 限流：消息频率限制、内容长度校验（已做 2000 字符截断）
+
+## 讨论
+
+💬 有问题或想交流？欢迎来 [GitHub Discussions](https://github.com/NimuStudio/NimuChat/discussions) 聊聊。
 
 ## 配套组件
 
