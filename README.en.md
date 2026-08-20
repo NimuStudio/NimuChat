@@ -4,6 +4,11 @@
 
 **Lightweight WebSocket IM component · real-time messaging · zero build · frontend + backend runnable**
 
+[![GitHub stars](https://img.shields.io/github/stars/NimuStudio/NimuChat?style=flat-square&label=Stars&color=6b9589)](https://github.com/NimuStudio/NimuChat)
+[![License](https://img.shields.io/github/license/NimuStudio/NimuChat?style=flat-square&label=License&color=6b9589)](https://github.com/NimuStudio/NimuChat/blob/main/LICENSE)
+[![WebSocket](https://img.shields.io/badge/WebSocket-Real%20Time-4a7a6e?style=flat-square)](https://github.com/NimuStudio/NimuChat)
+[![Dependencies](https://img.shields.io/badge/dependencies-1%20(ws)-f7f5f0?style=flat-square&labelColor=2c2416&color=6b9589)](https://github.com/NimuStudio/NimuChat)
+
 </div>
 
 ---

@@ -4,6 +4,11 @@
 
 **轻量 WebSocket 即时通讯组件 · 实时消息收发 · 零构建 · 前端+后端完整可跑**
 
+[![GitHub stars](https://img.shields.io/github/stars/NimuStudio/NimuChat?style=flat-square&label=Stars&color=6b9589)](https://github.com/NimuStudio/NimuChat)
+[![License](https://img.shields.io/github/license/NimuStudio/NimuChat?style=flat-square&label=License&color=6b9589)](https://github.com/NimuStudio/NimuChat/blob/main/LICENSE)
+[![WebSocket](https://img.shields.io/badge/WebSocket-Real%20Time-4a7a6e?style=flat-square)](https://github.com/NimuStudio/NimuChat)
+[![Dependencies](https://img.shields.io/badge/dependencies-1%20(ws)-f7f5f0?style=flat-square&labelColor=2c2416&color=6b9589)](https://github.com/NimuStudio/NimuChat)
+
 </div>
 
 ---
