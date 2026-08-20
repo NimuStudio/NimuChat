@@ -1,4 +1,4 @@
-﻿<div align="center">
+<div align="center">
 
 # ⚡ NimuChat
 
@@ -126,6 +126,18 @@ NimuChat/
 ## 配套组件
 
 - 🎨 需要漂亮的聊天界面？搭配 [**Nimu Glass UI**](https://github.com/NimuStudio/Nimu-glass-ui)（三主题玻璃拟态 UI 体系，含聊天界面组件）——NimuChat 管通讯，Nimu Glass UI 管颜值。
+
+## 支持者
+
+感谢以下支持者让这个项目持续下去 ❤️
+
+| 支持者 | 赞助档位 | 日期 |
+|---|---|---|
+| 等你来 ⭐ | 支持者 ¥18 | — |
+
+> 想支持这个项目？☕ [去爱发电请我喝杯咖啡](https://ifdian.net/a/NimuStudio)。**¥18 支持者档**支持者的名字（GitHub 用户名或昵称）会永久列入上表。
+>
+> 如果你已赞助，但想用另一个名字展示，发一条留言告诉我即可。
 
 ## 支持
 

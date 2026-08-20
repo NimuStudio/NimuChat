@@ -1,4 +1,4 @@
-﻿<div align="center">
+<div align="center">
 
 # ⚡ NimuChat
 
@@ -126,6 +126,16 @@ NimuChat/
 ## Related
 
 - 🎨 Need a beautiful chat UI? Pair with [**Nimu Glass UI**](https://github.com/NimuStudio/Nimu-glass-ui) (3-theme glassmorphism UI system incl. chat components) — NimuChat handles messaging, Nimu Glass UI handles looks.
+
+## Sponsors
+
+Thanks to the following supporters for keeping this project going ❤️
+
+| Supporter | Tier | Date |
+|---|---|---|
+| Waiting for you ⭐ | Supporter ¥18 | — |
+
+> Want to support? ☕ [Buy me a coffee on Afdian](https://ifdian.net/a/NimuStudio). Supporters of the **¥18 tier** get their name (GitHub username or nickname) listed here permanently.
 
 ## Support
 
