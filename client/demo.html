@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NimuChat 演示 — 双窗口实时聊天</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;background:#f5f5f7;display:flex;height:100vh;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;padding:24px}
+.chat-box{width:360px;height:520px;background:#fff;border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,.1);display:flex;flex-direction:column;overflow:hidden}
+.chat-box .hd{padding:14px 18px;font-weight:700;font-size:14px;border-bottom:1px solid #eee}
+.chat-box .hd span{color:#999;font-weight:400;font-size:12px;margin-left:6px}
+.msgs{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:8px;background:#fafafa}
+.msg{max-width:75%;padding:9px 13px;border-radius:14px;font-size:13px;line-height:1.5;word-break:break-word}
+.msg.me{background:#4a7a6e;color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
+.msg.other{background:#fff;border:1px solid #e5e5e5;align-self:flex-start;border-bottom-left-radius:4px}
+.msg .t{font-size:10px;opacity:.6;margin-top:3px}
+.msg.me .t{text-align:right}
+.inputbar{display:flex;gap:8px;padding:10px;border-top:1px solid #eee}
+.inputbar input{flex:1;border:1px solid #ddd;border-radius:10px;padding:9px 12px;font-size:13px;outline:none}
+.inputbar button{border:none;background:#4a7a6e;color:#fff;border-radius:10px;padding:0 18px;font-weight:600;cursor:pointer;font-size:13px}
+.status{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);font-size:12px;color:#888}
+</style>
+</head>
+<body>
+
+<div class="chat-box" id="boxA">
+  <div class="hd">用户 A <span id="statusA">未连接</span></div>
+  <div class="msgs" id="msgsA"></div>
+  <div class="inputbar"><input id="inputA" placeholder="输入消息..."><button onclick="sendA()">发送</button></div>
+</div>
+
+<div class="chat-box" id="boxB">
+  <div class="hd">用户 B <span id="statusB">未连接</span></div>
+  <div class="msgs" id="msgsB"></div>
+  <div class="inputbar"><input id="inputB" placeholder="输入消息..."><button onclick="sendB()">发送</button></div>
+</div>
+
+<div class="status">两个窗口连到同一个会话，实时互发消息 · 刷新后历史还在（内存存储）</div>
+
+<script src="chat-client.js"></script>
+<script>
+// 同一个会话 ID，两个用户
+var CONV = "demo_room";
+
+function setup(boxId, msgsId, userId) {
+  var box = document.getElementById(boxId);
+  var statusEl = document.getElementById(boxId === "boxA" ? "statusA" : "statusB");
+  var msgsEl = document.getElementById(msgsId);
+
+  var chat = new NimuChat("ws://" + location.host, { userId: userId });
+
+  chat.on("open", function () { statusEl.textContent = "已连接"; });
+  chat.on("close", function () { statusEl.textContent = "连接断开"; });
+  chat.on("auth", function () {
+    chat.subscribe(CONV);
+    chat.history(CONV);
+  });
+  chat.on("message", function (m) {
+    addMsg(m);
+  });
+  chat.on("history", function (msgs) {
+    msgs.forEach(addMsg);
+  });
+
+  function addMsg(m) {
+    var div = document.createElement("div");
+    div.className = "msg " + (m.sender_id === userId ? "me" : "other");
+    div.textContent = m.content;
+    var t = document.createElement("div");
+    t.className = "t";
+    t.textContent = m.sender_id === userId ? "我" : m.sender_id;
+    div.appendChild(t);
+    msgsEl.appendChild(div);
+    msgsEl.scrollTop = msgsEl.scrollHeight;
+  }
+
+  chat.connect();
+  return chat;
+}
+
+var chatA = setup("boxA", "msgsA", "user_A");
+var chatB = setup("boxB", "msgsB", "user_B");
+
+function sendA() {
+  var v = document.getElementById("inputA").value.trim();
+  if (v) { chatA.send(CONV, v); document.getElementById("inputA").value = ""; }
+}
+function sendB() {
+  var v = document.getElementById("inputB").value.trim();
+  if (v) { chatB.send(CONV, v); document.getElementById("inputB").value = ""; }
+}
+document.getElementById("inputA").addEventListener("keydown", function (e) { if (e.key === "Enter") sendA(); });
+document.getElementById("inputB").addEventListener("keydown", function (e) { if (e.key === "Enter") sendB(); });
+</script>
+</body>
+</html>

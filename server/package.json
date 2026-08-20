@@ -1,0 +1,12 @@
+{
+  "name": "nimuchat-server",
+  "version": "0.1.0",
+  "description": "NimuChat WebSocket server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.21.3"
+  }
+}
