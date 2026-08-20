@@ -118,6 +118,10 @@ NimuChat/
 
 - 🎨 需要漂亮的聊天界面？搭配 [**Nimu Glass UI**](https://github.com/NimuStudio/Nimu-glass-ui)（三主题玻璃拟态 UI 体系，含聊天界面组件）——NimuChat 管通讯，Nimu Glass UI 管颜值。
 
+## 支持
+
+喜欢这个项目？☕ [去爱发电请我喝杯咖啡](https://ifdian.net/a/NimuStudio)
+
 ## 许可证
 
 [MIT](LICENSE)

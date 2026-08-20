@@ -118,6 +118,10 @@ NimuChat/
 
 - 🎨 Need a beautiful chat UI? Pair with [**Nimu Glass UI**](https://github.com/NimuStudio/Nimu-glass-ui) (3-theme glassmorphism UI system incl. chat components) — NimuChat handles messaging, Nimu Glass UI handles looks.
 
+## Support
+
+Like this project? ☕ [Buy me a coffee on Afdian](https://ifdian.net/a/NimuStudio)
+
 ## License
 
 [MIT](LICENSE)
