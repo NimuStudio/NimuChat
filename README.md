@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/yuri-avatar.png" width="96" height="96" alt="柠木工作室 · Nimu Studio" style="border-radius:50%" />
+
 # ⚡ NimuChat
 
 **轻量 WebSocket 即时通讯组件 · 实时消息收发 · 零构建 · 前端+后端完整可跑**

@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/yuri-avatar.png" width="96" height="96" alt="Nimu Studio" style="border-radius:50%" />
+
 # ⚡ NimuChat
 
 **Lightweight WebSocket IM component · real-time messaging · zero build · frontend + backend runnable**
