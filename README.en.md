@@ -125,6 +125,8 @@ NimuChat/
 
 💬 Questions or want to chat? Join [GitHub Discussions](https://github.com/NimuStudio/NimuChat/discussions).
 
+Join the **Nimu Studio user group**: QQ group `1097466590` (or add the author on QQ `2998827169`) to chat, give feedback and follow updates.
+
 ## Related
 
 - 🎨 Need a beautiful chat UI? Pair with [**Nimu Glass UI**](https://github.com/NimuStudio/Nimu-glass-ui) (3-theme glassmorphism UI system incl. chat components) — NimuChat handles messaging, Nimu Glass UI handles looks.
