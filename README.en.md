@@ -13,6 +13,8 @@
 
 </div>
 
+> Maintained by [Nimu Studio](https://nimustudio.cn)
+
 ---
 
 ## What is it
