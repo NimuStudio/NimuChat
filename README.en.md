@@ -150,3 +150,12 @@ Like this project? ☕ [Buy me a coffee on Afdian](https://ifdian.net/a/NimuStud
 ## License
 
 [MIT](LICENSE)
+
+---
+
+## Contact
+
+- Website: [nimustudio.cn](https://nimustudio.cn)
+- GitHub: [@NimuStudio](https://github.com/NimuStudio)
+- QQ Group: **`1097466590`**
+- Afdian: [☕ Buy me a coffee](https://ifdian.net/a/NimuStudio)
